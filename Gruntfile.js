@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 			main: {
 				files: {
 					'js/build.js': [
-						'js/libs/jquery.js',
+						'node_modules/jquery/dist/jquery.js',
 						'js/main.js'
 					]
 				}
