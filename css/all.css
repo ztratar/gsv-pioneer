@@ -6553,9 +6553,39 @@ html {
 }
 nav.navbar-default {
   height: 60px !important;
-  background: rgba(255, 255, 255, 0.39) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.18) !important;
+  background: #1e1f22;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+nav.navbar-default ul.nav {
+  width: 100%;
+  font-size: 0;
+}
+nav.navbar-default ul.nav li {
+  width: 25%;
+  margin: 0;
+  font-size: 18px;
+}
+nav.navbar-default ul.nav li a {
+  height: 59px;
+  padding: 19px;
+  text-transform: uppercase;
+}
+nav.navbar-default ul.nav li a:hover,
+nav.navbar-default ul.nav li a:active,
+nav.navbar-default ul.nav li a:focus {
+  color: #aaa;
+  background-color: #18191B;
+}
+nav.navbar-default ul.nav li.active a {
+  color: #6081e8;
+  background-color: #131417;
+}
+nav.navbar-default ul.nav li.active a:hover,
+nav.navbar-default ul.nav li.active a:active,
+nav.navbar-default ul.nav li.active a:focus {
+  color: #6081e8;
+  background-color: #131417;
 }
 .v-centered {
   display: table;
@@ -6568,6 +6598,26 @@ nav.navbar-default {
 }
 .section {
   width: 100%;
+  padding: 72px 18px;
+}
+.section h2 {
+  font-size: 32px;
+  margin: 24px 0 64px;
+}
+.section h2.sub-h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+.section h2.sub-h2.green {
+  color: #00ca31;
+}
+.section h2.sub-h2.red {
+  color: #00ca31;
+}
+.section h2.sub-h2.blue {
+  color: #00ca31;
 }
 .section.cover-section {
   text-align: center;
@@ -6598,7 +6648,7 @@ nav.navbar-default {
 }
 .section.cover-section .video-screen {
   display: block;
-  background: rgba(28, 32, 37, 0.6);
+  background: rgba(13, 14, 16, 0.7);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -6621,6 +6671,23 @@ nav.navbar-default {
   background-size: cover;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
+}
+.section.theme-section {
+  text-align: center;
+}
+.section.theme-section .themes .col-sm-4 {
+  padding: 0 32px;
+}
+.section.theme-section .themes .col-sm-4 img {
+  display: inline-block;
+  width: 100px;
+  border-radius: 100px;
+  height: 100px;
+  overflow: hidden;
+  background: #eee;
+}
+.section.speakers-section {
+  background: #6081e8;
 }
 .other-sections {
   position: absolute;
