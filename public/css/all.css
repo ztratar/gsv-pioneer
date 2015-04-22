@@ -7044,6 +7044,8 @@ nav.navbar-default ul.nav li.active a:focus {
   margin: -18px;
   padding: 0;
   font-size: 0;
+  max-height: 274px;
+  overflow: hidden;
 }
 .section.companies-section ul.company-tiles li {
   height: 240px;
