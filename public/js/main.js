@@ -26,8 +26,8 @@ $(function() {
 			var bodyScroll = $scrollSection.offset().top;
 
 			$('body, html').animate({
-				scrollTop: bodyScroll
-			}, 740);
+				scrollTop: bodyScroll - 56
+			}, 640);
 		}
 
 		return false;
@@ -39,12 +39,17 @@ $(function() {
 	};
 
 	$(window).on('scroll', function() {
-		var curScroll = $('body').scrollTop() + 60;
+		var curScroll = $('body').scrollTop() + 96;
 
 		$.each(sectionMap, function(a, b) {
 			if (curScroll > b) {
 				activateNav(a);
 			}
 		});
+	});
+
+	$('.learn-more').on('click', function() {
+		$('.navbar-nav li a[href="#themes"]').click();
+		return false;
 	});
 });
