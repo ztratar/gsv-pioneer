@@ -28,8 +28,8 @@ module.exports = function(grunt) {
 		less: {
 			main: {
 				files: {
-					'css/all.css': [
-						'less/all.less'
+					'public/css/all.css': [
+						'public/less/all.less'
 					]
 				}
 			}
@@ -37,20 +37,20 @@ module.exports = function(grunt) {
 		uglify: {
 			main: {
 				files: {
-					'js/build.js': [
+					'public/js/build.js': [
 						'node_modules/jquery/dist/jquery.js',
-						'js/main.js'
+						'public/js/main.js'
 					]
 				}
 			}
 		},
 		watch: {
 			css: {
-				files: ['less/**'],
+				files: ['public/less/**'],
 				tasks: 'less'
 			},
 			js: {
-				files: ['js/**'],
+				files: ['public/js/**'],
 				tasks: 'uglify'
 			}
 		}
