@@ -6,7 +6,7 @@ Bundler.require
 
 use Rack::TryStatic, 
   :urls => %w[/],
-  :root => "/"
+  :root => ""
 
 run lambda { |env|
   [
