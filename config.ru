@@ -6,7 +6,7 @@ Bundler.require
 
 use Rack::TryStatic, 
   :urls => %w[/],
-  :root => "_site"
+  :root => "/"
 
 run lambda { |env|
   [
@@ -15,6 +15,6 @@ run lambda { |env|
       'Content-Type'  => 'text/html', 
       'Cache-Control' => 'public, max-age=86400' 
     },
-    File.open('_site/index.html', File::RDONLY)
+    File.open('index.html', File::RDONLY)
   ]
 }
