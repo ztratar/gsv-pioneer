@@ -5,7 +5,7 @@ Bundler.setup
 Bundler.require
 
 use Rack::Static,
-  :urls => ["/images", "/js", "/css", "/fonts"],
+  :urls => ["/img", "/js", "/css", "/fonts"],
   :root => "public"
 
 run lambda { |env|
