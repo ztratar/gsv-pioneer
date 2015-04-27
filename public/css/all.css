@@ -6630,14 +6630,43 @@ nav.navbar-default.animate-in {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+nav.navbar-default #headerLogo {
+  float: left;
+  height: 52px;
+  margin: 4px 6px 0 0;
+}
+@media (max-width: 768px) {
+  nav.navbar-default #headerLogo {
+    margin-left: 12px;
+  }
+}
 nav.navbar-default ul.nav {
-  width: 100%;
+  width: calc(67% - 6px);
   font-size: 0;
+  padding: 0 14px;
+  display: inline-block;
+}
+@media (max-width: 992px) {
+  nav.navbar-default ul.nav {
+    width: calc(100% - 147px);
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  nav.navbar-default ul.nav {
+    width: 100%;
+    text-align: left;
+  }
 }
 nav.navbar-default ul.nav li {
-  width: 20%;
+  width: 25%;
   margin: 0;
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  nav.navbar-default ul.nav li {
+    width: 100%;
+  }
 }
 nav.navbar-default ul.nav li a {
   height: 59px;
@@ -6659,6 +6688,56 @@ nav.navbar-default ul.nav li.active a:active,
 nav.navbar-default ul.nav li.active a:focus {
   color: #6081e8;
   background-color: #131417;
+}
+nav.navbar-default button.navbar-toggle {
+  margin: 13px 16px 0;
+  background: #6081e8;
+  border-color: #6081e8;
+}
+nav.navbar-default button.navbar-toggle .icon-bar {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+}
+nav.navbar-default button.navbar-toggle.collapsed {
+  background: #131417;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+nav.navbar-default button.navbar-toggle.collapsed:hover,
+nav.navbar-default button.navbar-toggle.collapsed:focus,
+nav.navbar-default button.navbar-toggle.collapsed:active {
+  background: #1c1e22;
+}
+nav.navbar-default button.navbar-toggle.collapsed:hover .icon-bar,
+nav.navbar-default button.navbar-toggle.collapsed:focus .icon-bar,
+nav.navbar-default button.navbar-toggle.collapsed:active .icon-bar {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9);
+}
+nav.navbar-default button.navbar-toggle:hover,
+nav.navbar-default button.navbar-toggle:focus,
+nav.navbar-default button.navbar-toggle:active {
+  background: #6081e8;
+}
+nav.navbar-default .navbar-collapse {
+  background: rgba(30, 31, 34, 0.97);
+  border: none;
+  -webkit-transition: box-shadow 0.24s ease-out;
+  -o-transition: box-shadow 0.24s ease-out;
+  transition: box-shadow 0.24s ease-out;
+}
+nav.navbar-default .navbar-collapse.in {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+nav.navbar-default .get-tickets {
+  float: right;
+  width: 16%;
+  margin: 12px 0 0 0;
+}
+@media (max-width: 992px) {
+  nav.navbar-default .get-tickets {
+    display: none;
+  }
 }
 .v-centered {
   display: table;

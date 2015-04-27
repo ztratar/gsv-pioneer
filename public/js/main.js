@@ -16,9 +16,10 @@ $(function() {
 	$(window).on('resize', calcSections);
 
 	var $navs = $('.navbar-nav li');
-	$('.navbar-nav li a').on('click', function(ev) {
+	$('.navbar-nav li a, .header-logo').on('click', function(ev) {
 		var $target = $(this),
-			href = $target.attr('href');
+			href = $target.attr('href'),
+			windowWidth = $(window).width();
 
 		var $scrollSection = $(href);
 
@@ -28,6 +29,10 @@ $(function() {
 			$('body, html').animate({
 				scrollTop: bodyScroll - 56
 			}, 640);
+		}
+
+		if (windowWidth <= 768) {
+			$('button.navbar-toggle').click();
 		}
 
 		return false;

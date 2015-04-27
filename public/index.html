@@ -13,23 +13,38 @@
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="#about">About<span class="sr-only">(current)</span></a>
-					</li>
-					<li>
-						<a href="#themes">Themes</a>
-					</li>
-					<li>
-						<a href="#speakers">Speakers</a>
-					</li>
-					<li>
-						<a href="#events">Events</a>
-					</li>
-					<li>
-						<a href="#companies">Companies</a>
-					</li>
-				</ul>
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#about" class="header-logo">
+						<img id="headerLogo" src="/img/pioneer_logo_tiny.png">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#themes">Themes</a>
+						</li>
+						<li>
+							<a href="#speakers">Speakers</a>
+						</li>
+						<li>
+							<a href="#events">Events</a>
+						</li>
+						<li>
+							<a href="#companies">Companies</a>
+						</li>
+					</ul>
+					<a href="/register" class="btn btn-primary get-tickets">
+						Reserve Invite
+					</a>
+				</div>
 			</div>
 		</nav>
 		<div class="section cover-section" id="about">
@@ -53,6 +68,9 @@
 			<video autoplay="" loop="true" id="bgvid">
 				<source src="http://ak9.picdn.net/shutterstock/videos/6722617/preview/stock-footage-flight-of-the-space-station-above-the-earth-d-animation.mp4" type="video/mp4">
 			</video>
+			<div class="sponsors">
+				<img src="">
+			</div>
 		</div>
 		<div class="other-sections">
 			<div class="section theme-section" id="themes">
