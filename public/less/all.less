@@ -425,6 +425,7 @@ nav.navbar-default {
 		#gradient > .directional(@blue, darken(@blue, 28%));
 		color: white;
 		text-align: center;
+		padding-bottom: 0;
 
 		h2 {
 			color: white;
@@ -434,10 +435,16 @@ nav.navbar-default {
 			}
 		}
 
+		.speaker-jumbo-wrap {
+			min-height: 340px;
+		}
+
 		ul.speaker-jumbo {
 			padding: 0;
 			margin: 0;
-			width: 100%;
+			position: absolute;
+			left: 18px;
+			right: 18px;
 			font-size: 0;
 			list-style: none;
 			height: 340px;
@@ -575,8 +582,12 @@ nav.navbar-default {
 
 
 		@media (max-width: @screen-sm) {
+			padding-bottom: 48px;
+
 			ul.speaker-jumbo {
 				height: auto;
+				width: auto;
+				position: static;
 
 				li {
 					width: 100%;

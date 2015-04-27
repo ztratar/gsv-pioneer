@@ -6961,6 +6961,7 @@ nav.navbar-default .get-tickets {
   background-image: linear-gradient(45deg, #6081e8, #1739a2);
   color: white;
   text-align: center;
+  padding-bottom: 0;
 }
 .section.speakers-section h2 {
   color: white;
@@ -6968,10 +6969,15 @@ nav.navbar-default .get-tickets {
 .section.speakers-section h2.sub-h2 {
   opacity: 0.8;
 }
+.section.speakers-section .speaker-jumbo-wrap {
+  min-height: 340px;
+}
 .section.speakers-section ul.speaker-jumbo {
   padding: 0;
   margin: 0;
-  width: 100%;
+  position: absolute;
+  left: 18px;
+  right: 18px;
   font-size: 0;
   list-style: none;
   height: 340px;
@@ -7109,8 +7115,13 @@ nav.navbar-default .get-tickets {
   opacity: 0.8;
 }
 @media (max-width: 768px) {
+  .section.speakers-section {
+    padding-bottom: 48px;
+  }
   .section.speakers-section ul.speaker-jumbo {
     height: auto;
+    width: auto;
+    position: static;
   }
   .section.speakers-section ul.speaker-jumbo li {
     width: 100%;
