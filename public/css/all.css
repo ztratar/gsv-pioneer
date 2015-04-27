@@ -6982,6 +6982,19 @@ nav.navbar-default .get-tickets {
   list-style: none;
   height: 340px;
   overflow: hidden;
+  opacity: 0;
+  z-index: 5;
+}
+@media (min-width: 1364px) {
+  .section.speakers-section ul.speaker-jumbo {
+    max-width: 1304px;
+    left: 50%;
+    margin-left: -652px;
+  }
+}
+.section.speakers-section ul.speaker-jumbo.active {
+  opacity: 1;
+  z-index: 10;
 }
 .section.speakers-section ul.speaker-jumbo li {
   width: 27%;
@@ -6991,7 +7004,7 @@ nav.navbar-default .get-tickets {
 .section.speakers-section ul.speaker-jumbo li a {
   height: 440px;
   width: 100%;
-  margin: -46px 0 0 0;
+  margin: -50px 0 0 0;
   padding: 18px;
   display: block;
   color: white;
@@ -7011,6 +7024,7 @@ nav.navbar-default .get-tickets {
   width: 100%;
   position: relative;
   z-index: 10;
+  margin-top: 32px;
   color: white;
 }
 .section.speakers-section ul.speaker-jumbo li a .speaker-wrapper h3 {
@@ -7118,10 +7132,16 @@ nav.navbar-default .get-tickets {
   .section.speakers-section {
     padding-bottom: 48px;
   }
+  .section.speakers-section .speaker-jumbo-wrap {
+    position: relative;
+    min-height: 468px;
+  }
   .section.speakers-section ul.speaker-jumbo {
     height: auto;
     width: auto;
-    position: static;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   .section.speakers-section ul.speaker-jumbo li {
     width: 100%;
@@ -7146,6 +7166,7 @@ nav.navbar-default .get-tickets {
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     min-height: 140px;
+    margin: 0;
   }
   .section.speakers-section ul.speaker-jumbo li a .speaker-wrapper h3 {
     font-size: 20px;
@@ -7171,7 +7192,7 @@ nav.navbar-default .get-tickets {
     bottom: 0px;
     right: -18px;
     left: -78px;
-    background-position: 50% 17%;
+    background-position: 50% 28%;
   }
   .section.speakers-section ul.speaker-jumbo li.more {
     width: 100%;

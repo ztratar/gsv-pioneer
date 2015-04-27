@@ -449,6 +449,19 @@ nav.navbar-default {
 			list-style: none;
 			height: 340px;
 			overflow: hidden;
+			opacity: 0;
+			z-index: 5;
+
+			@media (min-width: 1364px) {
+				max-width: 1304px;
+				left: 50%;
+				margin-left: -652px;
+			}
+
+			&.active {
+				opacity: 1;
+				z-index: 10;
+			}
 
 			li {
 				width: 27%;
@@ -458,7 +471,7 @@ nav.navbar-default {
 				a {
 					height: 440px;
 					width: 100%;
-					margin: -46px 0 0 0;
+					margin: -50px 0 0 0;
 					padding: 18px;
 					display: block;
 					color: white;
@@ -472,6 +485,7 @@ nav.navbar-default {
 						width: 100%;
 						position: relative;
 						z-index: 10;
+						margin-top: 32px;
 						color: white;
 
 						h3 {
@@ -584,10 +598,17 @@ nav.navbar-default {
 		@media (max-width: @screen-sm) {
 			padding-bottom: 48px;
 
+			.speaker-jumbo-wrap {
+				position: relative;
+				min-height: 468px;
+			}
+
 			ul.speaker-jumbo {
 				height: auto;
 				width: auto;
-				position: static;
+				position: absolute;
+				left: 0;
+				right: 0;
 
 				li {
 					width: 100%;
@@ -606,6 +627,7 @@ nav.navbar-default {
 						.speaker-wrapper {
 							.rotate(0deg);
 							min-height: 140px;
+							margin: 0;
 
 							h3 {
 								font-size: 20px;
@@ -633,7 +655,7 @@ nav.navbar-default {
 								bottom: 0px;
 								right: -18px;
 								left: -78px;
-								background-position: 50% 17%;
+								background-position: 50% 28%;
 							}
 						}
 					}
