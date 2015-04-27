@@ -53,6 +53,16 @@ $(function() {
 		});
 	});
 
+	setInterval(function() {
+		var $active = $('.speaker-jumbo.active'),
+			$next = $active.next();
+
+		if (!$next.length) $next = $('.speaker-jumbo').first();
+
+		$active.removeClass('active');
+		$next.addClass('active');
+	}, 6000);
+
 	$('.learn-more').on('click', function() {
 		$('.navbar-nav li a[href="#themes"]').click();
 		return false;
