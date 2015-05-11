@@ -6659,7 +6659,7 @@ nav.navbar-default ul.nav {
   }
 }
 nav.navbar-default ul.nav li {
-  width: 25%;
+  width: 33%;
   margin: 0;
   font-size: 18px;
 }
@@ -6773,6 +6773,12 @@ nav.navbar-default .get-tickets {
 }
 .section h2.sub-h2.blue {
   color: #00ca31;
+}
+.section p.primary-content {
+  font-size: 18px;
+  max-width: 884px;
+  margin: 0 auto;
+  color: #424449;
 }
 @media (max-width: 768px) {
   .section {
@@ -7233,6 +7239,7 @@ nav.navbar-default .get-tickets {
 }
 .section.events-section {
   text-align: center;
+  background: #EBEDF2;
 }
 .section.events-section ul.events {
   padding: 0;
@@ -7427,7 +7434,7 @@ nav.navbar-default .get-tickets {
   color: rgba(255, 255, 255, 0.84);
 }
 .section.footer-section .image-link-tiles a {
-  background: #3c3c3c;
+  background: #45464A;
   display: block;
   color: white;
   border-radius: 7px;
@@ -7443,10 +7450,11 @@ nav.navbar-default .get-tickets {
 }
 .section.footer-section .image-link-tiles a div.img {
   height: 200px;
-  background-size: cover;
   border-radius: 5px 5px 0 0;
   background: #1e1f22;
-  margin: -16px -16px 26px;
+  margin: -14px -14px 26px;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .section.footer-section .image-link-tiles a h4 {
   text-transform: uppercase;
@@ -7454,6 +7462,9 @@ nav.navbar-default .get-tickets {
   padding: 0;
   margin: 18px 0 10px;
   color: rgba(255, 255, 255, 0.8);
+}
+.section.footer-section .image-link-tiles a h4.double {
+  margin: 37px 0 18px;
 }
 .section.footer-section .image-link-tiles a:hover {
   text-decoration: none;
